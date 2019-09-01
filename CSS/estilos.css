@@ -6,6 +6,12 @@
 #   \___/____/____/..
 #   .................
 */
+/*--------------------Variables*/
+:root{
+    --green-color:#7ACC2D;
+    --whitesmoke-color:whitesmoke;
+}
+/*--------------------Variables*/
 html,body{
     padding:0px;
     margin: 0px;    
@@ -13,17 +19,66 @@ html,body{
     font-family: Helvetica;
 }
 
+/* css de la navbar */
 nav{
-    display: flex;
-    background-color: #4E8C45;
+    display: flex;/*para poner a los lados*/
+    background-color:var(--green-color);
     padding: 10px;
+    justify-content: space-between;
+    color:var(--whitesmoke-color);
+    align-items: center;
 }
-
 nav ul{
     display: flex;
 }
-
 nav li{
-    padding-right: 20px;
+    padding-left: 20px;
+    list-style: none;
+}
+nav li a{
+    color: black;
+text-decoration: none;
+}
+nav li a:hover{
+    color:var var(--whitesmoke-color);
+}
+/* fin de la navbar */
+/* Main section */
+.main_section{
+    padding: 15%;
+    text-align: center;
+}
+.products{
+    background-image: url("../imagenes/curve.png");
+    max-height: 50px;
+    background-size: cover;/*que ocupe todo el espacio*/
+    background-position: center top;/*para que este centrado y hacia arriva*/
+    padding: 20%;
+    display: flex;/*para que se pongan a los costados los scontenidos*/
+}
+.image_content{
+    text-align: center;
+}
+.product{
+    padding: 10px;
+    margin-top: -240px;
+}
+.product .content{
+    background-color: var(--whitesmoke-color);
+    padding: 15px;
+    box-shadow: 0 0 1px var(--whitesmoke-color);
 }
 
+.main_button{
+    background-color:  var(--green-color);
+    width: 100%;/*para que el boton ocupe todo el ancho*/
+    padding: 10px;/*para hacer mas grande el boton*/
+    font-size: 12px;/*para dar tamaño al texto*/
+    color: white;/*para darle color al mtexto*/
+    border: 0px;/*para quitar el borde*/
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main_button:hover{
+    background-color: #5e9e22;
+}
