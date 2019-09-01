@@ -1,0 +1,29 @@
+/*
+#   .................
+#   .._______________
+#   ./.___/.___/.___/
+#   /./__(__..|__..).
+#   \___/____/____/..
+#   .................
+*/
+html,body{
+    padding:0px;
+    margin: 0px;    
+    font-size: 12px;
+    font-family: Helvetica;
+}
+
+nav{
+    display: flex;
+    background-color: #4E8C45;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-right: 20px;
+}
+
