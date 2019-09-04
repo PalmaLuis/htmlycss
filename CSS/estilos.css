@@ -6,17 +6,24 @@
 #   \___/____/____/..
 #   .................
 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 /*--------------------Variables*/
 :root{
     --green-color:#7ACC2D;
     --whitesmoke-color:whitesmoke;
+    /* Tipografia */
+    --normal :12px;
+    /* Espaciado */
+    --space :10 px;
+    /* Box shadow */
+    --box:0px 0 2px 1px #e6e5e9
 }
 /*--------------------Variables*/
 html,body{
     padding:0px;
     margin: 0px;    
     font-size: 12px;
-    font-family: Helvetica;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* css de la navbar */
@@ -49,7 +56,7 @@ nav li a:hover{
     text-align: center;
 }
 .products{
-    background-image: url("../imagenes/curve.png");
+    background-image: url("../imagenes/curve.png");/*para poner la imagen de fondo*/
     max-height: 50px;
     background-size: cover;/*que ocupe todo el espacio*/
     background-position: center top;/*para que este centrado y hacia arriva*/
@@ -66,7 +73,7 @@ nav li a:hover{
 .product .content{
     background-color: var(--whitesmoke-color);
     padding: 15px;
-    box-shadow: 0 0 1px var(--whitesmoke-color);
+    box-shadow: var(--box);
 }
 
 .main_button{
@@ -81,4 +88,31 @@ nav li a:hover{
 }
 .main_button:hover{
     background-color: #5e9e22;
+}
+/*categorias estilo*/
+.categorias{
+    max-height: 50px;
+    padding: 15%;
+    display: flex;
+}
+.imag{
+    text-align: center;
+}
+.catego{
+    padding: 20px;
+    margin-top: -100px;
+}
+.catego .contenid{
+    padding: 15px;
+    text-align: center; 
+}
+/* fin categoria estilo */
+/* titulo de mencion */
+.mencion{
+    margin-top: 50px;
+    text-align: center;
+}
+/* fin mencion */
+.menciones{
+    display: flex;
 }
