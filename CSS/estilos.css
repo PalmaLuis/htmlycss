@@ -109,10 +109,49 @@ nav li a:hover{
 /* fin categoria estilo */
 /* titulo de mencion */
 .mencion{
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 180 px;
+    text-align: center;/*para la palabra menciones*/
 }
 /* fin mencion */
 .menciones{
+    margin-top: -180px;
     display: flex;
+    padding: 15%;
+}
+
+.mencione .mencio{
+    padding: 0px;
+    text-align:center;
+    padding-block-end: 2px;
+    box-shadow: 0 1px 3px 2px #a8a8a8;/*para hacer los bordes*/
+    
+}
+.mencione{
+    padding:5px;
+}
+
+.footer{
+    display: flex;/*para poner a los lados*/
+    background-color:#313337;
+    padding: 10px;
+    justify-content: space-between;
+    color:var(--whitesmoke-color);
+    align-items: center;
+}
+
+.footer li{
+    padding-left: 20px;
+    list-style: none;/*par que no salga los puntos*/
+}
+
+.footer li a{
+    color: var(--whitesmoke-color);
+    text-decoration: none;/*para que no slaga mla linea*/
+}
+.footer li a:hover{
+    color:grey;
+}
+
+.footer .foo:hover{
+    color:grey;
 }
