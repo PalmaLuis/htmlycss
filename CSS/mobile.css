@@ -1,0 +1,25 @@
+@media (max-width:600px){
+    .products{
+       display: inherit;
+        height: auto;
+        padding: 5%;
+        max-height: none;
+    }
+    .product{
+        margin-top: auto;
+    }
+    .main_section{
+        padding: 4%;
+    }
+    .categorias{
+        display: inherit;
+        max-height: none;
+    }
+    .catego{
+        margin-top: auto;
+    }
+    .menciones{
+        display: inherit;
+        margin-top: 0px;
+    }
+}
